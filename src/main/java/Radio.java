@@ -52,7 +52,7 @@ public class Radio {
 
     public int getCurrentVolume() {
         return currentVolume;
-    }gi
+    }
 
     public void setCurrentVolume(int newCurrentVolume) {
         if (newCurrentVolume > 100) {
