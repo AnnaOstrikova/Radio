@@ -9,14 +9,14 @@ public class Radio {
     private int maxVolume;
 
 
-    public Radio (){
+    public Radio() {
         this.maxRadioStation = 9;
         this.minRadioStation = 0;
         this.minVolume = 0;
         this.maxVolume = 100;
     }
 
-    public Radio (int quantity){
+    public Radio(int quantity) {
         this.maxRadioStation = quantity - 1;
     }
 
@@ -52,7 +52,7 @@ public class Radio {
 
     public int getCurrentVolume() {
         return currentVolume;
-    }
+    }gi
 
     public void setCurrentVolume(int newCurrentVolume) {
         if (newCurrentVolume > 100) {

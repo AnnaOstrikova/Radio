@@ -4,6 +4,7 @@ import ru.netology.javaqa.javaqamvn.radio.Radio;
 
 public class RadioTest {
     Radio rad = new Radio();
+
     @Test // Тест на уст-ку радио выше максимума
     public void shouldSetRadioStationAboveMax() {
         rad.setCurrentRadioStation(10);
@@ -13,7 +14,7 @@ public class RadioTest {
     }
 
     @Test// Тест на уст-ку радостанции
-    public void shouldSetRadioStation(){
+    public void shouldSetRadioStation() {
         Radio rad = new Radio(35);
         rad.setCurrentRadioStation(20);
         int expected = 20;
@@ -46,6 +47,7 @@ public class RadioTest {
         int actual = rad.getCurrentRadioStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test // Тест на уст-ку радио меньше минимальной
     public void shouldSetRadioStationLessMin() {
         rad.setCurrentRadioStation(-1);
@@ -79,6 +81,7 @@ public class RadioTest {
         int actual = rad.getCurrentRadioStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test //Тест на уст-ку громкости выше максимальной
     public void shouldSetVolumeAboveMax() {
         rad.setCurrentVolume(101);
@@ -139,6 +142,7 @@ public class RadioTest {
         int actual = rad.getCurrentRadioStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test // Тест на переключение след станции после максимальной
     public void shouldSetNextStationAboveMax() {
         rad.setCurrentRadioStation(9);
@@ -157,6 +161,7 @@ public class RadioTest {
         int actual = rad.getCurrentRadioStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test // Тест на переключение станции предыдущей минимальной
     public void shouldSetPrevStationLessMin() {
         rad.setCurrentRadioStation(0);
